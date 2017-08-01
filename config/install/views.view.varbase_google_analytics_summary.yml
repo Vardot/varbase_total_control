@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - charts
+    - charts_highcharts
     - google_analytics_reports
     - user
     - views_bootstrap
