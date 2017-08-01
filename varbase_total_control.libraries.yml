@@ -1,0 +1,7 @@
+vtc:
+  version: 'VERSION'
+  css:
+    theme:
+      css/vtc.css: {}
+  js:
+    js/vtc.js: {}
