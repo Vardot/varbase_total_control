@@ -8,4 +8,4 @@ dependencies:
   - total_control
   - google_analytics_reports
   - charts
-  - charts_highcharts
+  - charts:charts_highcharts
