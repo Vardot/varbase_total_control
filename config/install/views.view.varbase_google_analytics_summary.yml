@@ -4,7 +4,6 @@ status: true
 dependencies:
   module:
     - charts
-    - charts_highcharts
     - google_analytics_reports
     - user
     - views_bootstrap
@@ -514,7 +513,7 @@ display:
           empty: true
           tokenize: 0
           content:
-            value: '<p>Data from Google Analytics cannot be retrieved. You must authenticate your Google Analytics account to see these reports. <a href="/admin/config/services/google-analytics-reports-api">Click here</a> to configure Google Analytics authentication to your site. </p><p><em>You must have administrator permissions on your Google Analytics and your Varbase site to do this. If you don't have permission, please contact your site administrator.</em></p>'
+            value: '<p>Data from Google Analytics cannot be retrieved. You must authenticate your Google Analytics account to see these reports. <a href="/admin/config/services/google-analytics-reports-api">Click here</a> to configure Google Analytics authentication to your site. </p><p><em>You must have administrator permissions on your Google Analytics and your Varbase site to do this. If you don''t have permission, please contact your site administrator.</em></p>'
             format: full_html
           plugin_id: text
     cache_metadata:
@@ -1301,7 +1300,7 @@ display:
           empty: true
           tokenize: 0
           content:
-            value: '<p>Data from Google Analytics cannot be retrieved. You must authenticate your Google Analytics account to see these reports. <a href="/admin/config/services/google-analytics-reports-api">Click here</a> to configure Google Analytics authentication to your site. </p><p><em>You must have administrator permissions on your Google Analytics and your Varbase site to do this. If you don't have permission, please contact your site administrator.</em></p>'
+            value: '<p>Data from Google Analytics cannot be retrieved. You must authenticate your Google Analytics account to see these reports. <a href="/admin/config/services/google-analytics-reports-api">Click here</a> to configure Google Analytics authentication to your site. </p><p><em>You must have administrator permissions on your Google Analytics and your Varbase site to do this. If you don''t have permission, please contact your site administrator.</em></p>'
             format: full_html
           plugin_id: text
       header: {  }
@@ -1569,7 +1568,7 @@ display:
           empty: true
           tokenize: 0
           content:
-            value: '<p>Data from Google Analytics cannot be retrieved. You must authenticate your Google Analytics account to see these reports. <a href="/admin/config/services/google-analytics-reports-api">Click here</a> to configure Google Analytics authentication to your site. </p><p><em>You must have administrator permissions on your Google Analytics and your Varbase site to do this. If you don't have permission, please contact your site administrator.</em></p>'
+            value: '<p>Data from Google Analytics cannot be retrieved. You must authenticate your Google Analytics account to see these reports. <a href="/admin/config/services/google-analytics-reports-api">Click here</a> to configure Google Analytics authentication to your site. </p><p><em>You must have administrator permissions on your Google Analytics and your Varbase site to do this. If you don''t have permission, please contact your site administrator.</em></p>'
             format: full_html
           plugin_id: text
       header: {  }

@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the Varbase Dahsboard module.
+ */
+
+/**
+ * Implements hook_install().
+ * @see system_install()
+ */
+function varbase_total_control_install() {
+  if (!\Drupal::moduleHandler()->moduleExists('charts_highcharts')) {
+    \Drupal::service('module_installer')->install(['charts_highcharts'], FALSE);
+  }
+}
