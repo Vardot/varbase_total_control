@@ -6,6 +6,11 @@
 function varbase_total_control_page_attachments(array &$attachments) {
   // Attach our extra CSS for Varbase dashboard.
   $attachments['#attached']['library'][] = 'varbase_total_control/vtc';
+
+  $moduleHandler = \Drupal::service ( 'module_handler' );
+  if ($moduleHandler->moduleExists ( 'masonry' )) {
+    $attachments['#attached']['library'][] = 'varbase_total_control/vtc-masonry';
+  }
 }
 
 function varbase_total_control_theme($existing, $type, $theme, $path) {

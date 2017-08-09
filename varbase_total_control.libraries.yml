@@ -3,5 +3,7 @@ vtc:
   css:
     theme:
       css/vtc.css: {}
+vtc-masonry:
+  version: 'VERSION'
   js:
     js/vtc.js: {}
