@@ -5,7 +5,6 @@
   "homepage": "https://github.com/Vardot/varbase_total_control",
   "license": "GPL-2.0+",
   "minimum-stability": "dev",
-  "prefer-stable": true,
   "authors": [
     {
       "name": "Mohammed J. Razem",
