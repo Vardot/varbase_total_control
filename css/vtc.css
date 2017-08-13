@@ -1,22 +1,10 @@
 /**
  * Main menu icons.
  */
-.grid {
-  float: left;
-}
 .row {
   width: 100%;
   margin-bottom: 20px;
   display: inline-block;
-}
-.grid-12 {
-  width: 100%;
-}
-.grid-8 {
-  width: 66%;
-}
-.grid-4 {
-  width: 33%;
 }
 .panel.dashboard-block {
   margin: 0px 10px;
