@@ -42,7 +42,7 @@ class VarbaseCreateContent extends BlockBase implements BlockPluginInterface {
       // Check against pane config for type.
       if ((!array_key_exists($type, $config ['total_control_admin_types_links'])) || (isset($config ['total_control_admin_types_links']) && $config ['total_control_admin_types_links'] [$type]) == $type) {
         // Check access, then add a link to create content.
-        if (\Drupal::currentUser()->hasPermission('create ' . $object->get('name') . ' content')) {
+        if (\Drupal::currentUser()->hasPermission('create ' . $object->get('type') . ' content')) {
           $link_options = array(
             'attributes' => array(
               'class' => array(
