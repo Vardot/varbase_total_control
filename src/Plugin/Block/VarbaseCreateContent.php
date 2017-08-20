@@ -46,7 +46,7 @@ class VarbaseCreateContent extends BlockBase implements BlockPluginInterface {
           $link_options = array(
             'attributes' => array(
               'class' => array(
-                Html::cleanCssIdentifier(Unicode::strtolower($object->get('name'))),
+                Html::cleanCssIdentifier(Unicode::strtolower($object->get('type'))),
               ),
             ),
           );

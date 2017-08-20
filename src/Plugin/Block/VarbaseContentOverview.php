@@ -60,14 +60,14 @@ class VarbaseContentOverview extends BlockBase implements BlockPluginInterface {
             $comment_count = db_query("SELECT count(DISTINCT c.cid) FROM {comment} c INNER JOIN {comment_field_data} n ON c.cid = n.cid INNER JOIN {node} node WHERE n.entity_id = node.nid AND node.type = :type AND n.status = 1", array(
               ':type' => $type
               ))->fetchField();
-            $content_data [$type . '_comments'] = \Drupal::translation()->formatPlural(number_format($comment_count), '1 comment', '<span class="comment"><span class="num">@count</span> Comments</span>');
+            $content_data [$type . '_comments'] = \Drupal::translation()->formatPlural(number_format($comment_count), '<span class="comment"><span class="num">@count</span> Comment</span>', '<span class="comment"><span class="num">@count</span> Comments</span>');
 
             // Compare against spam option checkbox on pane config.
             if ($spam) {
               $spam_count = db_query("SELECT count(DISTINCT c.cid) FROM {comment} c INNER JOIN {comment_field_data} n ON c.cid = n.cid INNER JOIN {node} node WHERE n.entity_id = node.nid AND node.type = :type AND n.status = 0", array(
                 ':type' => $type
                 ))->fetchField();
-              $content_data [$type . '_comments_spam'] = \Drupal::translation()->formatPlural(number_format($spam_count), '1 spam', '<span class="spam"><span class="num">@count</span> Spam</span>');
+              $content_data [$type . '_comments_spam'] = \Drupal::translation()->formatPlural(number_format($spam_count), '<span class="spam"><span class="num">@count</span> Spam</span>', '<span class="spam"><span class="num">@count</span> Spams</span>');
             }
           }
         }
