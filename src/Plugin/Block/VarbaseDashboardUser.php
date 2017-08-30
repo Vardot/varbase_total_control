@@ -1,12 +1,8 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\varbase_total_control\Plugin\Block\VarbaseDashboardUser.
- */
-
 namespace Drupal\varbase_total_control\Plugin\Block;
 
+use Drupal\user\Entity\User;
 use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Url;
 
@@ -22,11 +18,10 @@ use Drupal\Core\Url;
 class VarbaseDashboardUser extends BlockBase {
 
   /**
-   *
    * {@inheritdoc}
    */
   public function build() {
-    $user = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
+    $user = User::load(\Drupal::currentUser()->id());
     $destination = drupal_get_destination();
     $options = [
       $destination,
@@ -36,10 +31,10 @@ class VarbaseDashboardUser extends BlockBase {
     $url = new Url('entity.user.edit_form', ['user' => $user->id(), $options]);
     $body_data = '<div class="content"> <div class="welcome"><p class="welcome-back">Welcome back </p><p class="name"> ' . $name . ' </p></div><div class="action-links"><a class="button button-action button--primary button--small" href="' . $url->tostring() . '">Edit Account</a></div></div>';
 
-    return array(
+    return [
       '#type' => 'markup',
-      '#markup' => $body_data
-    );
+      '#markup' => $body_data,
+    ];
   }
 
 }

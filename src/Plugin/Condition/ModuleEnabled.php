@@ -34,7 +34,7 @@ class ModuleEnabled extends ConditionPluginBase {
   public function defaultConfiguration() {
     return [
       'module' => '',
-      ] + parent::defaultConfiguration();
+    ] + parent::defaultConfiguration();
   }
 
   /**
@@ -54,7 +54,8 @@ class ModuleEnabled extends ConditionPluginBase {
     $module = $this->configuration['module'];
     if (!empty($this->configuration['negate'])) {
       return $this->t('If the module <b>@module</b> is not installed.', ['@module' => $module]);
-    } else {
+    }
+    else {
       return $this->t('If the module <b>@module</b> is installed.', ['@module' => $module]);
     }
   }

@@ -1,5 +1,6 @@
 /**
- * @file Behaviors for the Varbase Dashboard.
+ * @file
+ * Behaviors for the Varbase Dashboard.
  */
 
 (function ($, _, Drupal, drupalSettings) {

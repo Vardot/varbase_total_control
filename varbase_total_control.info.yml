@@ -3,7 +3,6 @@ type: module
 description: Varbase Administration Dashboard
 package: Administration
 core: 8.x
-version: 1.0
 dependencies:
   - total_control
   - google_analytics_reports

@@ -7,6 +7,7 @@
 
 /**
  * Implements hook_install().
+ *
  * @see system_install()
  */
 function varbase_total_control_install() {

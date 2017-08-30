@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\varbase_total_control\Plugin\Block\VarbaseQuickLinks.
- */
-
 namespace Drupal\varbase_total_control\Plugin\Block;
 
 use Drupal\Core\Url;
@@ -22,26 +17,25 @@ use Drupal\Core\Block\BlockBase;
 class VarbaseQuickLinks extends BlockBase {
 
   /**
-   *
    * {@inheritdoc}
    */
   public function build() {
-    $links = array();
+    $links = [];
 
-    $links [] = \Drupal::l('Manage menus', new Url('entity.menu.collection'));
-    $links [] = \Drupal::l('Manage taxonomy', new Url('entity.taxonomy_vocabulary.collection'));
-    $links [] = \Drupal::l('Manage users', new Url('entity.user.collection'));
+    $links[] = \Drupal::l('Manage menus', new Url('entity.menu.collection'));
+    $links[] = \Drupal::l('Manage taxonomy', new Url('entity.taxonomy_vocabulary.collection'));
+    $links[] = \Drupal::l('Manage users', new Url('entity.user.collection'));
 
     $body_data = [
       '#theme' => 'item_list',
       '#list_type' => 'ul',
-      '#items' => $links
+      '#items' => $links,
     ];
 
-    return array(
+    return [
       '#type' => 'markup',
-      '#markup' => drupal_render($body_data)
-    );
+      '#markup' => drupal_render($body_data),
+    ];
   }
 
 }

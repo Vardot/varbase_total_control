@@ -51,4 +51,3 @@ views.view.varbase_google_analytics_summary:
                     value:
                       type: string
                       label: 'Value'
-
