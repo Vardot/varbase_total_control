@@ -39,9 +39,9 @@
 <div{{ attributes.addClass(classes) }}>
   {{ title_prefix }}
   {% if label %}
-    <h3 class="panel__title">{{ label }}</h3><span class="action-links"><a class="button button-action button--primary button--small" href="https://analytics.google.com/analytics/web/">Go to Google Analytics</a></span>
+    <h3 class="panel__title">{{ label }}</h3><span class="action-links"><a class="button button-action button--primary button--small" href="https://analytics.google.com/analytics/web/">{{ "Go to Google Analytics"|t }}</a></span>
   {% endif %}
-  <div class="description">Over the past 30 days.</div>
+  <div class="description">{{ "Over the past 30 days."|t }}</div>
   {{ title_suffix }}
   {% block content %}
     <div class="panel__content">

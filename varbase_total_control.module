@@ -13,6 +13,7 @@ function varbase_total_control_page_attachments(array &$attachments) {
     'page_manager.page_view_total_control_dashboard_total_control_dashboard-panels_variant-1',
     'page_manager.page_view_total_control_dashboard_total_control_dashboard-panels_variant-0',
   ];
+
   if (in_array(\Drupal::routeMatch()->getRouteName(), $routers)) {
     // Attach our extra CSS for Varbase dashboard.
     $attachments['#attached']['library'][] = 'varbase_total_control/vtc';

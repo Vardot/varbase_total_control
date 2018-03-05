@@ -1,4 +1,3 @@
-
 # Varbase Total Control Dashboard
 
 A dashboard is what is missing for better Drupal administration experience.
