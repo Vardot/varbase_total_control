@@ -1,9 +1,10 @@
-name: Varbase Dashboard
+name: 'Varbase Total Control Dashboard'
 type: module
-description: Varbase Administration Dashboard
-package: Administration
+description: 'A dashboard is what is missing for better Drupal administration experience. This dashboard is built on top of Total Control Admin Dashboard module, utilizing Panels, Google Analytics Reports, and several enhanced blocks and widgets for an intuitive and flexible administration experience.'
 core: 8.x
+package: Varbase
 dependencies:
   - total_control
   - google_analytics_reports
   - charts
+version: 8.x-4.x-dev
