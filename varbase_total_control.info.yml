@@ -7,4 +7,5 @@ dependencies:
   - total_control
   - google_analytics_reports
   - charts
+  - charts_highcharts
 version: 8.x-4.x-dev
