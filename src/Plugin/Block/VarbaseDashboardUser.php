@@ -29,7 +29,7 @@ class VarbaseDashboardUser extends BlockBase {
 
     $name = \Drupal::l($user->getUsername(), new Url('entity.user.edit_form', ['user' => $user->id(), $options]));
     $url = new Url('entity.user.edit_form', ['user' => $user->id(), $options]);
-    $body_data = '<div class="content"> <div class="welcome"><p class="welcome-back">Welcome back </p><p class="name"> ' . $name . ' </p></div><div class="action-links"><a class="button button-action button--primary button--small" href="' . $url->tostring() . '">Edit Account</a></div></div>';
+    $body_data = '<div class="content"> <div class="welcome"><p class="welcome-back">' . $this->t('Welcome back') . '</p><p class="name"> ' . $name . ' </p></div><div class="action-links"><a class="button button-action button--primary button--small" href="' . $url->tostring() . '">' . $this->t('Edit Account') . '</a></div></div>';
 
     return [
       '#type' => 'markup',

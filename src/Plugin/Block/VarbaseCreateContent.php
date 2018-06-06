@@ -50,7 +50,7 @@ class VarbaseCreateContent extends BlockBase implements BlockPluginInterface {
         }
       }
     }
-    $links[] = \Drupal::l('More...', new Url('node.add_page', $options));
+    $links[] = \Drupal::l($this->t('More...'), new Url('node.add_page', $options));
 
     $body_data = [
       '#theme' => 'item_list',
