@@ -22,9 +22,9 @@ class VarbaseQuickLinks extends BlockBase {
   public function build() {
     $links = [];
 
-    $links[] = \Drupal::l('Manage menus', new Url('entity.menu.collection'));
-    $links[] = \Drupal::l('Manage taxonomy', new Url('entity.taxonomy_vocabulary.collection'));
-    $links[] = \Drupal::l('Manage users', new Url('entity.user.collection'));
+    $links[] = \Drupal::l($this->t('Manage menus'), new Url('entity.menu.collection'));
+    $links[] = \Drupal::l($this->t('Manage taxonomy'), new Url('entity.taxonomy_vocabulary.collection'));
+    $links[] = \Drupal::l($this->t('Manage users'), new Url('entity.user.collection'));
 
     $body_data = [
       '#theme' => 'item_list',
