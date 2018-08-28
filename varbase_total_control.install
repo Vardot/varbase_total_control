@@ -5,6 +5,8 @@
  * Install, update and uninstall functions for the Varbase Dahsboard module.
  */
 
+use Symfony\Component\Yaml\Yaml;
+
 /**
  * Implements hook_install().
  *
