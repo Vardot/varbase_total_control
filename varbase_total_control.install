@@ -11,7 +11,20 @@
  * @see system_install()
  */
 function varbase_total_control_install() {
+
+  // Enable Google Analytics Reports API
+  if (!\Drupal::moduleHandler()->moduleExists('google_analytics_reports_api')) {
+    \Drupal::service('module_installer')->install(['google_analytics_reports_api'], FALSE);
+  }
+
+  // Enable Google Analytics Reports
+  if (!\Drupal::moduleHandler()->moduleExists('google_analytics_reports')) {
+    \Drupal::service('module_installer')->install(['google_analytics_reports'], FALSE);
+  }
+
+  // Enable Charts Highcharts
   if (!\Drupal::moduleHandler()->moduleExists('charts_highcharts')) {
     \Drupal::service('module_installer')->install(['charts_highcharts'], FALSE);
   }
+
 }
