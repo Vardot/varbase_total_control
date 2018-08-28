@@ -5,6 +5,4 @@ core: 8.x
 package: Varbase
 dependencies:
   - total_control
-  - google_analytics_reports
-  - charts_highcharts
 version: 8.x-6.x-dev
