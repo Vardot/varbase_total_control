@@ -27,4 +27,20 @@ function varbase_total_control_install() {
     \Drupal::service('module_installer')->install(['charts_highcharts'], FALSE);
   }
 
+  $module_path = Drupal::service('module_handler')->getModule('varbase_total_control')->getPath();
+
+  $optional_configs = [
+    'views.view.varbase_google_analytics_summary',
+    'page_manager.page_variant.total_control_dashboard-panels_variant-0',
+    'page_manager.page_variant.total_control_dashboard-panels_variant-1',
+  ];
+
+  foreach($optional_configs as $optional_config) {
+    $config_path = $module_path . '/config/optional/' . $optional_config . '.yml';
+    $config_content = file_get_contents($config_path);
+    $config_data = (array) Yaml::parse($config_content);
+    $config_factory = \Drupal::configFactory()->getEditable($optional_config);
+    $config_factory->setData($config_data)->save(TRUE);
+  }
+
 }
