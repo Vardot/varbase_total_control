@@ -24,6 +24,11 @@ function varbase_total_control_install() {
     \Drupal::service('module_installer')->install(['google_analytics_reports'], FALSE);
   }
 
+  // Enable Charts
+  if (!\Drupal::moduleHandler()->moduleExists('charts')) {
+    \Drupal::service('module_installer')->install(['charts'], FALSE);
+  }
+
   // Enable Charts Highcharts
   if (!\Drupal::moduleHandler()->moduleExists('charts_highcharts')) {
     \Drupal::service('module_installer')->install(['charts_highcharts'], FALSE);
