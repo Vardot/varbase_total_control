@@ -8,7 +8,6 @@ dependencies:
     - views.view.varbase_google_analytics_summary
   module:
     - panels
-    - varbase_total_control
     - views
 id: total_control_dashboard-panels_variant-1
 label: 'Varbase Dashboard Masonry'
