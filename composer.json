@@ -33,7 +33,7 @@
     "drupal/drupal-library-installer-plugin": "^0.3",
     "drupal/masonry": "~1.0",
     "drupal/charts": "~3.0",
-    "drupal/google_analytics_reports": "3.x-dev#2b6bb8efbc7f61ce3c1225638075aa6037b8db44",
+    "drupal/google_analytics_reports": "~3.0",
     "drupal/total_control": "~2.0"
   },
   "extra": {
@@ -47,14 +47,6 @@
     "enable-patching": true,
     "composer-exit-on-patch-failure": true,
     "patches": {
-      "drupal/google_analytics_reports": {
-        "Issue #2850463: Error when saving either google_analytics_reports view":
-        "https://www.drupal.org/files/issues/error_when_saving-2850463-2.patch",
-        "Issue #2860399: Warning: htmlspecialchars() expects parameter 1 to be string":
-        "https://www.drupal.org/files/issues/Fix_message-2860399-5.patch",
-        "Issue #2932010: Fixed an issue to Not to check Updates or import Fields while the Drupal site MAINTENANCE_MODE is in Install or Update.":
-        "https://www.drupal.org/files/issues/2932010-4.patch"
-      },
       "drupal/total_control": {
         "Issue #2935351: Fixed the issue when Enabled with multilingual of Translatable Markup for Invalid Argument Exception: $string (Array) must be a string.":
         "https://www.drupal.org/files/issues/2935351-2.patch"
