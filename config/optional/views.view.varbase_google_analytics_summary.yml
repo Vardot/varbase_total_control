@@ -4,11 +4,10 @@ status: true
 dependencies:
   module:
     - charts
+    - charts_google
     - google_analytics_reports
     - user
     - views_bootstrap
-_core:
-  default_config_hash: KxFwaGrOTF2085NLGRC_KEjyfV_3l0z5yEbCC_THFJo
 id: varbase_google_analytics_summary
 label: 'Varbase Google Analytics Summary'
 module: views
@@ -106,7 +105,7 @@ display:
           decimal: .
           separator: ','
           format_plural: 0
-          format_plural_string: "1\x03@count"
+          format_plural_string: !!binary MQNAY291bnQ=
           prefix: ''
           suffix: ''
           plugin_id: numeric
@@ -163,7 +162,7 @@ display:
           decimal: .
           separator: ','
           format_plural: 0
-          format_plural_string: "1\x03@count"
+          format_plural_string: !!binary MQNAY291bnQ=
           prefix: ''
           suffix: ''
           plugin_id: numeric
@@ -220,7 +219,7 @@ display:
           decimal: .
           separator: ','
           format_plural: 0
-          format_plural_string: "1\x03@count"
+          format_plural_string: !!binary MQNAY291bnQ=
           prefix: ''
           suffix: ''
           plugin_id: numeric
@@ -277,7 +276,7 @@ display:
           decimal: .
           separator: ','
           format_plural: 0
-          format_plural_string: "1\x03@count"
+          format_plural_string: !!binary MQNAY291bnQ=
           prefix: ''
           suffix: ''
           plugin_id: numeric
@@ -386,7 +385,7 @@ display:
           decimal: .
           separator: ','
           format_plural: 0
-          format_plural_string: "1\x03@count"
+          format_plural_string: !!binary MQNAY291bnQ=
           prefix: ''
           suffix: '%'
           plugin_id: numeric
@@ -443,7 +442,7 @@ display:
           decimal: .
           separator: ','
           format_plural: 0
-          format_plural_string: "1\x03@count"
+          format_plural_string: !!binary MQNAY291bnQ=
           prefix: ''
           suffix: '%'
           plugin_id: numeric
@@ -528,7 +527,8 @@ display:
     display_title: 'Sessions and Pageviews chart'
     position: 3
     display_options:
-      display_extenders: {  }
+      display_extenders:
+        metatag_display_extender: {  }
       display_description: ''
       title: 'Sessions and Pageviews'
       defaults:
@@ -542,7 +542,9 @@ display:
       style:
         type: chart
         options:
-          library: highcharts
+          grouping: {  }
+          allow_advanced_rendering: 0
+          library: google
           type: area
           label_field: nothing
           fields:
@@ -563,10 +565,23 @@ display:
           title_position: in
           tooltips: 'TRUE'
           data_labels: 'TRUE'
+          data_markers: 'FALSE'
           legend_position: right
           background: ''
+          three_dimensional: 0
+          polar: 0
           width: ''
+          width_units: ''
           height: ''
+          height_units: ''
+          max: ''
+          min: ''
+          green_from: ''
+          green_to: ''
+          yellow_from: ''
+          yellow_to: ''
+          red_from: ''
+          red_to: ''
           xaxis_title: ''
           xaxis_labels_rotation: '45'
           yaxis_title: ''
@@ -633,7 +648,7 @@ display:
           decimal: .
           separator: ' '
           format_plural: false
-          format_plural_string: "1\x03@count"
+          format_plural_string: !!binary MQNAY291bnQ=
           prefix: ''
           suffix: ''
           plugin_id: numeric
@@ -690,7 +705,7 @@ display:
           decimal: .
           separator: ' '
           format_plural: false
-          format_plural_string: "1\x03@count"
+          format_plural_string: !!binary MQNAY291bnQ=
           prefix: ''
           suffix: ''
           plugin_id: numeric
@@ -974,7 +989,7 @@ display:
           decimal: .
           separator: ','
           format_plural: 0
-          format_plural_string: "1\x03@count"
+          format_plural_string: !!binary MQNAY291bnQ=
           prefix: ' - '
           suffix: ' sessions'
           plugin_id: numeric
@@ -1204,7 +1219,7 @@ display:
           decimal: .
           separator: ','
           format_plural: 0
-          format_plural_string: "1\x03@count"
+          format_plural_string: !!binary MQNAY291bnQ=
           prefix: ''
           suffix: ' views'
           plugin_id: numeric
@@ -1472,7 +1487,7 @@ display:
           decimal: .
           separator: ','
           format_plural: 0
-          format_plural_string: "1\x03@count"
+          format_plural_string: !!binary MQNAY291bnQ=
           prefix: ''
           suffix: ' sessions'
           plugin_id: numeric

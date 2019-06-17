@@ -11,4 +11,4 @@ install:
   - google_analytics_reports_api
   - google_analytics_reports
   - charts
-  - charts_highcharts
+  - charts_google
