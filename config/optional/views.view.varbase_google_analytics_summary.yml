@@ -1,10 +1,9 @@
-uuid: ab2e0fac-cdf8-472b-aa75-14382fbfa082
 langcode: en
 status: true
 dependencies:
   module:
     - charts
-    - charts_google
+    - charts_c3
     - google_analytics_reports
     - user
     - views_bootstrap
@@ -544,7 +543,7 @@ display:
         options:
           grouping: {  }
           allow_advanced_rendering: 0
-          library: google
+          library: c3
           type: area
           label_field: nothing
           fields:

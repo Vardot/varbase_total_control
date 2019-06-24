@@ -34,7 +34,10 @@
     "drupal/masonry": "~1.0",
     "drupal/charts": "~3.0",
     "drupal/google_analytics_reports": "~3.0",
-    "drupal/total_control": "~2.0"
+    "drupal/total_control": "~2.0",
+    "bower-asset/chartjs": "2.7.*",
+    "bower-asset/c3": "0.4.*",
+    "bower-asset/d3": "3.5.*"
   },
   "extra": {
     "branch-alias": {
@@ -44,6 +47,13 @@
       "bower-asset",
       "npm-asset"
     ],
+    "drupal-libraries": {
+      "libraries": [
+        {"name": "chartjs", "package": "bower-asset/chartjs"},
+        {"name": "c3","package": "bower-asset/c3"},
+        {"name": "d3", "package": "bower-asset/d3"}
+      ]
+    },
     "enable-patching": true,
     "composer-exit-on-patch-failure": true,
     "patches": {

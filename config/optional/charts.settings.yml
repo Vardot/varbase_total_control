@@ -1,5 +1,5 @@
 charts_default_settings:
-  library: google
+  library: c3
   type: area
   title: ''
   colors:
