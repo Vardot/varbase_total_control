@@ -55,12 +55,6 @@
       ]
     },
     "enable-patching": true,
-    "composer-exit-on-patch-failure": true,
-    "patches": {
-      "drupal/total_control": {
-        "Issue #2935351: Fixed the issue when Enabled with multilingual of Translatable Markup for Invalid Argument Exception: $string (Array) must be a string.":
-        "https://www.drupal.org/files/issues/2935351-2.patch"
-      }
-    }
+    "composer-exit-on-patch-failure": true
   }
 }
