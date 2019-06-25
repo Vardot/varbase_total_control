@@ -37,7 +37,9 @@
     "drupal/total_control": "~2.0",
     "bower-asset/chartjs": "2.7.*",
     "bower-asset/c3": "0.4.*",
-    "bower-asset/d3": "3.5.*"
+    "bower-asset/d3": "3.5.*",
+    "npm-asset/masonry-layout": "~4.0",
+    "npm-asset/imagesloaded": "~4.0"
   },
   "extra": {
     "branch-alias": {
@@ -51,7 +53,9 @@
       "libraries": [
         {"name": "chartjs", "package": "bower-asset/chartjs"},
         {"name": "c3","package": "bower-asset/c3"},
-        {"name": "d3", "package": "bower-asset/d3"}
+        {"name": "d3", "package": "bower-asset/d3"},
+        {"name": "masonry", "package": "npm-asset/masonry-layout"},
+        {"name": "imagesloaded", "package": "npm-asset/imagesloaded"}
       ]
     },
     "enable-patching": true,
