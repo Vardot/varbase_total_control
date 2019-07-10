@@ -545,7 +545,7 @@ display:
           allow_advanced_rendering: 0
           library: c3
           type: area
-          label_field: nothing
+          label_field: day
           fields:
             table: ''
           data_fields:
@@ -570,17 +570,17 @@ display:
           three_dimensional: 0
           polar: 0
           width: ''
-          width_units: ''
+          width_units: '%'
           height: ''
-          height_units: ''
-          max: ''
-          min: ''
-          green_from: ''
-          green_to: ''
-          yellow_from: ''
-          yellow_to: ''
-          red_from: ''
-          red_to: ''
+          height_units: px
+          max: '100'
+          min: '0'
+          green_from: '85'
+          green_to: '100'
+          yellow_from: '50'
+          yellow_to: '85'
+          red_from: '0'
+          red_to: '50'
           xaxis_title: ''
           xaxis_labels_rotation: '45'
           yaxis_title: ''
