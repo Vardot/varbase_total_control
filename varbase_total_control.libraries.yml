@@ -1,9 +1,7 @@
 vtc:
-  version: 'VERSION'
   css:
     theme:
-      css/vtc.css: {}
+      css/theme/varbase-total-control.theme.css: {}
 vtc-masonry:
-  version: 'VERSION'
   js:
-    js/vtc.js: {}
+    js/varbase-total-control-masonry.js: {}

@@ -1,12 +1,12 @@
 /**
  * @file
- * Behaviors for the Varbase Dashboard.
+ * Behaviors for the Varbase Total Control Dashboard masonry.
  */
 
 (function ($, _, Drupal, drupalSettings) {
   'use strict';
 
-  Drupal.behaviors.vtc = {
+  Drupal.behaviors.varbaseTotalControlMasonry = {
     attach: function (context, settings) {
       var $options = new Object();
       $options.gutter = 0;
