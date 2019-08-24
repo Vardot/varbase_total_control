@@ -176,7 +176,7 @@ class VarbaseContentOverview extends BlockBase implements BlockPluginInterface, 
           $rows[] = [
             'data' => [
               [
-                'data' => Markup::create($link),
+                'data' => $link->toString(),
                 'class' => ['type'],
               ],
               [
