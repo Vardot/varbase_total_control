@@ -175,21 +175,6 @@
   text-align: left;
 }
 
-.vtc-dashboard-masonry .masonry-item-1 {
-  width: 30% !important;
-  margin-bottom: 20px;
-}
-
-.vtc-dashboard-masonry .masonry-item-2 {
-  width: 61% !important;
-  margin-bottom: 20px;
-}
-
-.vtc-dashboard-masonry .masonry-item-3 {
-  width: 100% !important;
-  margin-bottom: 20px;
-}
-
 .dashboard-block .spam {
   color: red;
   display: block;

@@ -41,7 +41,6 @@
     "bower-asset/chartjs": "2.7.*: Provides JavaScript library necessary for Chart JS",
     "bower-asset/c3": "0.4.*: Provides JavaScript library necessary for C3",
     "bower-asset/d3": "3.5.*: Provides JavaScript library necessary for D3",
-    "npm-asset/masonry-layout": "~4.0: Provides JavaScript library necessary for Masonry Layout",
     "npm-asset/imagesloaded": "~4.0: Provides JavaScript library necessary for Image Loaded"
   },
   "extra": {
@@ -54,7 +53,6 @@
         {"name": "chartjs", "package": "bower-asset/chartjs"},
         {"name": "c3","package": "bower-asset/c3"},
         {"name": "d3", "package": "bower-asset/d3"},
-        {"name": "masonry", "package": "npm-asset/masonry-layout"},
         {"name": "imagesloaded", "package": "npm-asset/imagesloaded"}
       ]
     },

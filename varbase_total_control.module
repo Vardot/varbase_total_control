@@ -20,9 +20,6 @@ function varbase_total_control_page_attachments(array &$attachments) {
 
     $moduleHandler = \Drupal::service('module_handler');
 
-    if ($moduleHandler->moduleExists('masonry')) {
-      $attachments['#attached']['library'][] = 'varbase_total_control/vtc-masonry';
-    }
   }
 }
 
