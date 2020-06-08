@@ -104,7 +104,7 @@ class VarbaseCreateContent extends BlockBase implements BlockPluginInterface, Co
       $container->get('renderer'),
       $container->get('redirect.destination'),
       $container->get('current_user'),
-      $container->get('entity.manager')->getStorage('user')
+      $container->get('entity_type.manager')->getStorage('user')
     );
   }
 
