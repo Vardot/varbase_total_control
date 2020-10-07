@@ -4,6 +4,7 @@ node_modules
 
 # Ignore Variables
 /css/variables.css
+/css/mixins/
 
 # Ignore vim swp files and gedit temp files
 *.swp

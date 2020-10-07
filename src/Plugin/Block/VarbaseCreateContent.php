@@ -132,7 +132,7 @@ class VarbaseCreateContent extends BlockBase implements BlockPluginInterface, Co
               ],
             ],
           ];
-          $url = new Url('node.add', ['node_type' => $object->get('type'), $options]);
+          $url = new Url('node.add', ['node_type' => $object->get('type')], $options);
           $url->setOptions($link_options);
           $links[] = Link::fromTextAndUrl($object->get('name'),
            $url);
