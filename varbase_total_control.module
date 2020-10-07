@@ -17,9 +17,6 @@ function varbase_total_control_page_attachments(array &$attachments) {
   if (in_array(\Drupal::routeMatch()->getRouteName(), $routers)) {
     // Attach our extra CSS for Varbase dashboard.
     $attachments['#attached']['library'][] = 'varbase_total_control/vtc';
-
-    $moduleHandler = \Drupal::service('module_handler');
-
   }
 }
 
