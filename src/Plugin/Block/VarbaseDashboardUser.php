@@ -110,7 +110,7 @@ class VarbaseDashboardUser extends BlockBase implements BlockPluginInterface, Co
       $destination,
     ];
 
-    $name = Link::fromTextAndUrl($user->getDisplayName(), new Url('entity.user.edit_form', ['user' => $user->id(), $options]))->toString();
+    $name = Link::fromTextAndUrl($user->getDisplayName(), new Url('entity.user.edit_form', ['user' => $user->id()], $options))->toString();
     $url = new Url('entity.user.edit_form', ['user' => $user->id(), $options]);
     $welcom_back_text = $this->t('Welcome back');
 
