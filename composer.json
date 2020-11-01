@@ -32,8 +32,8 @@
     "oomphinc/composer-installers-extender": "~1.0",
     "cweagans/composer-patches": "~1.0",
     "drupal/drupal-library-installer-plugin": "^0.3",
-    "drupal/core": "^8 || ^9 || ~10.0.0",
-    "drupal/charts": "~3.0",
+    "drupal/core": "^9 || ~10.0.0",
+    "drupal/charts": "~5.0",
     "drupal/google_analytics_reports": "~3.0",
     "drupal/total_control": "~2.0"
   },
