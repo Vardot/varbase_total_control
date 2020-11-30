@@ -28,10 +28,9 @@
     }
   },
   "require": {
-    "composer/installers": "~1.0",
-    "oomphinc/composer-installers-extender": "~1.0",
+    "composer/installers": "~1.0 || ~2.0",
+    "oomphinc/composer-installers-extender": "~1.0 || ~2.0",
     "cweagans/composer-patches": "~1.0",
-    "drupal/drupal-library-installer-plugin": "^0.3",
     "drupal/core": "^8.8.0 || ~9.0.0",
     "drupal/masonry": "~1.0",
     "drupal/charts": "~3.0",
@@ -40,8 +39,8 @@
   },
   "suggest": {
     "bower-asset/chartjs": "2.7.*: Provides JavaScript library necessary for Chart JS",
-    "bower-asset/c3": "0.4.*: Provides JavaScript library necessary for C3",
-    "bower-asset/d3": "3.5.*: Provides JavaScript library necessary for D3",
+    "bower-asset/c3": "0.7.*: Provides JavaScript library necessary for C3",
+    "bower-asset/d3": "~5.0: Provides JavaScript library necessary for D3",
     "npm-asset/masonry-layout": "~4.0: Provides JavaScript library necessary for Masonry Layout",
     "npm-asset/imagesloaded": "~4.0: Provides JavaScript library necessary for Image Loaded"
   },
