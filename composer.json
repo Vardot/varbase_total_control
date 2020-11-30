@@ -37,8 +37,8 @@
   },
   "suggest": {
     "bower-asset/chartjs": "2.7.*: Provides JavaScript library necessary for Chart JS",
-    "bower-asset/c3": "0.4.*: Provides JavaScript library necessary for C3",
-    "bower-asset/d3": "3.5.*: Provides JavaScript library necessary for D3",
+    "bower-asset/c3": "0.7.*: Provides JavaScript library necessary for C3",
+    "bower-asset/d3": "~5.0: Provides JavaScript library necessary for D3",
     "npm-asset/imagesloaded": "~4.0: Provides JavaScript library necessary for Image Loaded"
   },
   "extra": {
