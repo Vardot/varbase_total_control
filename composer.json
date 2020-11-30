@@ -3,7 +3,6 @@
   "description": "Varbase Total Control Dashboard: A dashboard is what is missing for better Drupal administration experience. This dashboard is built on top of Total Control Admin Dashboard module, utilizing Panels, Google Analytics Reports, and several enhanced blocks and widgets for an intuitive and flexible administration experience.",
   "type": "drupal-module",
   "homepage": "https://github.com/Vardot/varbase_total_control",
-  "notification-url": "https://packages.drupal.org/8/downloads",
   "license": "GPL-2.0-or-later",
   "minimum-stability": "dev",
   "authors": [
@@ -28,11 +27,10 @@
     }
   },
   "require": {
-    "composer/installers": "~1.0",
-    "oomphinc/composer-installers-extender": "~1.0",
+    "composer/installers": "~1.0 || ~2.0",
+    "oomphinc/composer-installers-extender": "~1.0 || ~2.0",
     "cweagans/composer-patches": "~1.0",
-    "drupal/drupal-library-installer-plugin": "^0.3",
-    "drupal/core": "^9 || ~10.0.0",
+    "drupal/core": "~9.0",
     "drupal/charts": "~5.0",
     "drupal/google_analytics_reports": "~3.0",
     "drupal/total_control": "~2.0"
