@@ -171,7 +171,7 @@ class VarbaseContentOverview extends BlockBase implements BlockPluginInterface, 
         $link = Link::fromTextAndUrl($content_data[$type],
           new Url('system.admin_content', $options));
 
-        if ($comments_exist) {
+        if ($comments_exist && isset($content_data[$type . '_comments_spam'])) {
           $comment = (!empty($content_data[$type . '_comments_spam']) ? Markup::create($content_data[$type . '_comments']->render() . $content_data[$type . '_comments_spam']->render()) : Markup::create($content_data[$type . '_comments']->render()));
           $rows[] = [
             'data' => [
