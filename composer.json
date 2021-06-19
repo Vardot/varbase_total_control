@@ -33,7 +33,7 @@
     "drupal/core": "~9.0",
     "drupal/charts": "~5.0",
     "drupal/google_analytics_reports": "~3.0",
-    "drupal/total_control": "~2.0"
+    "drupal/total_control": "~3.0"
   },
   "suggest": {
     "bower-asset/chartjs": "2.7.*: Provides JavaScript library necessary for Chart JS",
