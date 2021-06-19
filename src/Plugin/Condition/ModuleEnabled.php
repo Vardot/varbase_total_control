@@ -64,6 +64,10 @@ class ModuleEnabled extends ConditionPluginBase {
    * {@inheritdoc}
    */
   public function evaluate() {
+    if (!trim($this->configuration['module'])) {
+      return TRUE;
+    }
+
     $moduleHandler = \Drupal::service('module_handler');
     return (bool) $moduleHandler->moduleExists($this->configuration['module']);
   }
