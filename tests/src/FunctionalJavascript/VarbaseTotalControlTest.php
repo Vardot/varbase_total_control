@@ -44,10 +44,10 @@ class VarbaseTotalControlTest extends WebDriverTestBase {
     parent::setUp();
 
     // Insall the Claro admin theme.
-    $this->container->get('theme_installer')->install(['claro']);
+    $this->container->get('theme_installer')->install(['vartheme_claro']);
 
     // Set the Claro theme as the default admin theme.
-    $this->config('system.theme')->set('admin', 'claro')->save();
+    $this->config('system.theme')->set('admin', 'vartheme_claro')->save();
 
   }
 

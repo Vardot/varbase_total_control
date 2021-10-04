@@ -22,9 +22,7 @@ build:
           - composer require bower-asset/c3:0.7.*
           - composer require bower-asset/d3:~5.0
           - composer require npm-asset/imagesloaded:~4.0
-          - composer require drupal/vartheme_bs4:9.0.x-dev
-          - sudo chmod 775 -R .
-          - sudo chown www-data:$USER -R .
+          - composer require drupal/vartheme_claro:~3.0
           - cat composer.json
           - ls -li ${SOURCE_DIR}/librariess
       phplint: {  }
@@ -40,7 +38,7 @@ build:
       phpstan:
         halt-on-fail: false
     testing:
-      run_tests.functional:
-        types: 'PHPUnit-Functional'
+      run_tests.javascript:
+        types: 'PHPUnit-FunctionalJavascript'
         testgroups: 'varbase_total_control'
         suppress-deprecations: true
