@@ -137,7 +137,7 @@ class VarbaseContentOverview extends BlockBase implements BlockPluginInterface, 
         ]);
         $type_count = $type_query->fetchField();
 
-        $content_data[$type] = $this->stringTranslation->formatPlural(number_format($type_count, 0 , '.' , ''), '<span class="num">1</span> ' . $object->get('name') . ' item', '<span class="num">@count</span> ' . $object->get('name') . ' items');
+        $content_data[$type] = $this->stringTranslation->formatPlural(number_format($type_count, 0, '.', ''), '<span class="num">1</span> ' . $object->get('name') . ' item', '<span class="num">@count</span> ' . $object->get('name') . ' items');
 
         // Check if comments module is enabled.
         if ($comments_exist) {

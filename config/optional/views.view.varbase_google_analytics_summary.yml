@@ -8,12 +8,12 @@ dependencies:
     - user
     - views_bootstrap
 id: varbase_google_analytics_summary
-label: 'Varbase Google Analytics Summary'
+label: "Varbase Google Analytics Summary"
 module: views
-description: 'Display summary statistic information about website from Google Analytics.'
-tag: 'Google Analytics Reports'
+description: "Display summary statistic information about website from Google Analytics."
+tag: "Google Analytics Reports"
 base_table: google_analytics
-base_field: ''
+base_field: ""
 core: 8.x
 display:
   default:
@@ -25,10 +25,10 @@ display:
       access:
         type: perm
         options:
-          perm: 'have total control'
+          perm: "have total control"
       cache:
         type: tag
-        options: {  }
+        options: {}
       query:
         type: views_query
       exposed_form:
@@ -37,15 +37,15 @@ display:
           submit_button: Apply
           reset_button: false
           reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          exposed_sorts_label: "Sort by"
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
         type: some
         options:
-          items_per_page: '10'
-          offset: '0'
+          items_per_page: "10"
+          offset: "0"
       style:
         type: table
       row:
@@ -57,56 +57,56 @@ display:
           field: sessions
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: ""
           label: Sessions
           exclude: 0
           alter:
             alter_text: 0
-            text: ''
+            text: ""
             make_link: 0
-            path: ''
+            path: ""
             absolute: 0
             external: 0
             replace_spaces: 0
             path_case: none
             trim_whitespace: 0
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: 0
-            max_length: '0'
+            max_length: "0"
             word_boundary: 1
             ellipsis: 1
             more_link: 0
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: 0
             trim: 0
-            preserve_tags: ''
+            preserve_tags: ""
             html: 0
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: 1
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: 1
-          empty: '-'
+          empty: "-"
           hide_empty: 1
           empty_zero: 0
           hide_alter_empty: 1
           set_precision: 0
-          precision: '0'
+          precision: "0"
           decimal: .
-          separator: ','
+          separator: ","
           format_plural: 0
           format_plural_string: !!binary MQNAY291bnQ=
-          prefix: ''
-          suffix: ''
+          prefix: ""
+          suffix: ""
           plugin_id: numeric
         users:
           id: users
@@ -114,56 +114,56 @@ display:
           field: users
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: ""
           label: Users
           exclude: 0
           alter:
             alter_text: 0
-            text: ''
+            text: ""
             make_link: 0
-            path: ''
+            path: ""
             absolute: 0
             external: 0
             replace_spaces: 0
             path_case: none
             trim_whitespace: 0
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: 0
-            max_length: '0'
+            max_length: "0"
             word_boundary: 1
             ellipsis: 1
             more_link: 0
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: 0
             trim: 0
-            preserve_tags: ''
+            preserve_tags: ""
             html: 0
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: 1
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: 1
-          empty: '-'
+          empty: "-"
           hide_empty: 1
           empty_zero: 0
           hide_alter_empty: 1
           set_precision: 0
-          precision: '0'
+          precision: "0"
           decimal: .
-          separator: ','
+          separator: ","
           format_plural: 0
           format_plural_string: !!binary MQNAY291bnQ=
-          prefix: ''
-          suffix: ''
+          prefix: ""
+          suffix: ""
           plugin_id: numeric
         pageviews:
           id: pageviews
@@ -171,56 +171,56 @@ display:
           field: pageviews
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: ""
           label: Pageviews
           exclude: 0
           alter:
             alter_text: 0
-            text: ''
+            text: ""
             make_link: 0
-            path: ''
+            path: ""
             absolute: 0
             external: 0
             replace_spaces: 0
             path_case: none
             trim_whitespace: 0
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: 0
-            max_length: '0'
+            max_length: "0"
             word_boundary: 1
             ellipsis: 1
             more_link: 0
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: 0
             trim: 0
-            preserve_tags: ''
+            preserve_tags: ""
             html: 0
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: 1
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: 1
-          empty: '-'
+          empty: "-"
           hide_empty: 0
           empty_zero: 0
           hide_alter_empty: 1
           set_precision: 0
-          precision: '0'
+          precision: "0"
           decimal: .
-          separator: ','
+          separator: ","
           format_plural: 0
           format_plural_string: !!binary MQNAY291bnQ=
-          prefix: ''
-          suffix: ''
+          prefix: ""
+          suffix: ""
           plugin_id: numeric
         pageviewsPerSession:
           id: pageviewsPerSession
@@ -228,56 +228,56 @@ display:
           field: pageviewsPerSession
           relationship: none
           group_type: group
-          admin_label: ''
-          label: 'Pages / Session'
+          admin_label: ""
+          label: "Pages / Session"
           exclude: 0
           alter:
             alter_text: 0
-            text: ''
+            text: ""
             make_link: 0
-            path: ''
+            path: ""
             absolute: 0
             external: 0
             replace_spaces: 0
             path_case: none
             trim_whitespace: 0
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: 0
-            max_length: '0'
+            max_length: "0"
             word_boundary: 1
             ellipsis: 1
             more_link: 0
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: 0
             trim: 0
-            preserve_tags: ''
+            preserve_tags: ""
             html: 0
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: 1
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: 1
-          empty: '-'
+          empty: "-"
           hide_empty: 1
           empty_zero: 0
           hide_alter_empty: 1
           set_precision: 1
-          precision: '2'
+          precision: "2"
           decimal: .
-          separator: ','
+          separator: ","
           format_plural: 0
           format_plural_string: !!binary MQNAY291bnQ=
-          prefix: ''
-          suffix: ''
+          prefix: ""
+          suffix: ""
           plugin_id: numeric
         avgSessionDuration:
           id: avgSessionDuration
@@ -285,51 +285,51 @@ display:
           field: avgSessionDuration
           relationship: none
           group_type: group
-          admin_label: ''
-          label: 'Avg. Session Duration'
+          admin_label: ""
+          label: "Avg. Session Duration"
           exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: ""
             make_link: false
-            path: ''
+            path: ""
             absolute: false
             external: false
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: false
             max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: false
             trim: false
-            preserve_tags: ''
+            preserve_tags: ""
             html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: true
-          empty: '-'
+          empty: "-"
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
           date_format: custom
-          custom_date_format: 'i:s'
-          timezone: ''
+          custom_date_format: "i:s"
+          timezone: ""
           plugin_id: date
         bounceRate:
           id: bounceRate
@@ -337,56 +337,56 @@ display:
           field: bounceRate
           relationship: none
           group_type: group
-          admin_label: ''
-          label: 'Bounce Rate'
+          admin_label: ""
+          label: "Bounce Rate"
           exclude: 0
           alter:
             alter_text: 0
-            text: ''
+            text: ""
             make_link: 0
-            path: ''
+            path: ""
             absolute: 0
             external: 0
             replace_spaces: 0
             path_case: none
             trim_whitespace: 0
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: 0
-            max_length: '0'
+            max_length: "0"
             word_boundary: 1
             ellipsis: 1
             more_link: 0
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: 0
             trim: 0
-            preserve_tags: ''
+            preserve_tags: ""
             html: 0
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: 1
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: 1
-          empty: '-'
+          empty: "-"
           hide_empty: 0
           empty_zero: 0
           hide_alter_empty: 1
           set_precision: 1
-          precision: '2'
+          precision: "2"
           decimal: .
-          separator: ','
+          separator: ","
           format_plural: 0
           format_plural_string: !!binary MQNAY291bnQ=
-          prefix: ''
-          suffix: '%'
+          prefix: ""
+          suffix: "%"
           plugin_id: numeric
         percentNewSessions:
           id: percentNewSessions
@@ -394,56 +394,56 @@ display:
           field: percentNewSessions
           relationship: none
           group_type: group
-          admin_label: ''
-          label: '% New Sessions'
+          admin_label: ""
+          label: "% New Sessions"
           exclude: 0
           alter:
             alter_text: 0
-            text: ''
+            text: ""
             make_link: 0
-            path: ''
+            path: ""
             absolute: 0
             external: 0
             replace_spaces: 0
             path_case: none
             trim_whitespace: 0
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: 0
-            max_length: '0'
+            max_length: "0"
             word_boundary: 1
             ellipsis: 1
             more_link: 0
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: 0
             trim: 0
-            preserve_tags: ''
+            preserve_tags: ""
             html: 0
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: 1
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: 1
-          empty: '-'
+          empty: "-"
           hide_empty: 0
           empty_zero: 0
           hide_alter_empty: 1
           set_precision: 1
-          precision: '2'
+          precision: "2"
           decimal: .
-          separator: ','
+          separator: ","
           format_plural: 0
           format_plural_string: !!binary MQNAY291bnQ=
-          prefix: ''
-          suffix: '%'
+          prefix: ""
+          suffix: "%"
           plugin_id: numeric
       filters:
         start_date:
@@ -452,54 +452,54 @@ display:
           field: start_date
           value:
             type: offset
-            value: '-31 day'
+            value: "-31 day"
           group: 1
           expose:
-            operator: ''
+            operator: ""
         end_date:
           id: end_date
           table: google_analytics
           field: end_date
           value:
             type: offset
-            value: '-1 day'
+            value: "-1 day"
           group: 1
           expose:
-            operator: ''
-      sorts: {  }
-      title: 'Google Analytics Summary'
-      header: {  }
-      footer: {  }
-      empty: {  }
-      relationships: {  }
-      arguments: {  }
-      display_extenders: {  }
+            operator: ""
+      sorts: {}
+      title: "Google Analytics Summary"
+      header: {}
+      footer: {}
+      empty: {}
+      relationships: {}
+      arguments: {}
+      display_extenders: {}
       css_class: google-analytics-reports-summary
     cache_metadata:
       max-age: 0
       contexts:
-        - 'languages:language_interface'
+        - "languages:language_interface"
         - user.permissions
-      tags: {  }
+      tags: {}
   sessions_and_pageviews:
     display_plugin: block
     id: sessions_and_pageviews
-    display_title: 'Sessions and Pageviews'
+    display_title: "Sessions and Pageviews"
     position: 2
     display_options:
-      display_extenders: {  }
-      display_description: ''
-      title: 'Sessions and Pageviews'
+      display_extenders: {}
+      display_description: ""
+      title: "Sessions and Pageviews"
       defaults:
         title: false
         pager: false
         empty: false
-      block_description: 'Sessions and Pageviews'
+      block_description: "Sessions and Pageviews"
       block_category: Dashboard
       pager:
         type: none
         options:
-          offset: '0'
+          offset: "0"
       empty:
         area:
           id: area
@@ -507,7 +507,7 @@ display:
           field: area
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: ""
           empty: true
           tokenize: 0
           content:
@@ -517,19 +517,19 @@ display:
     cache_metadata:
       max-age: 0
       contexts:
-        - 'languages:language_interface'
+        - "languages:language_interface"
         - user.permissions
-      tags: {  }
+      tags: {}
   sessions_pageviews_chart:
     display_plugin: attachment
     id: sessions_pageviews_chart
-    display_title: 'Sessions and Pageviews chart'
+    display_title: "Sessions and Pageviews chart"
     position: 3
     display_options:
       display_extenders:
-        metatag_display_extender: {  }
-      display_description: ''
-      title: 'Sessions and Pageviews'
+        metatag_display_extender: {}
+      display_description: ""
+      title: "Sessions and Pageviews"
       defaults:
         title: false
         style: false
@@ -541,13 +541,13 @@ display:
       style:
         type: chart
         options:
-          grouping: {  }
+          grouping: {}
           allow_advanced_rendering: 0
           library: c3
           type: area
           label_field: day
           fields:
-            table: ''
+            table: ""
           data_fields:
             sessions: sessions
             pageviews: pageviews
@@ -555,44 +555,44 @@ display:
             month: 0
             nothing: 0
           field_colors:
-            sessions: '#2f7ed8'
-            pageviews: '#aadff3'
-            day: '#910000'
-            month: '#910000'
-            nothing: '#1aadce'
-          title: ''
+            sessions: "#2f7ed8"
+            pageviews: "#aadff3"
+            day: "#910000"
+            month: "#910000"
+            nothing: "#1aadce"
+          title: ""
           title_position: in
-          tooltips: 'TRUE'
-          data_labels: 'TRUE'
-          data_markers: 'FALSE'
+          tooltips: "TRUE"
+          data_labels: "TRUE"
+          data_markers: "FALSE"
           legend_position: right
-          background: ''
+          background: ""
           three_dimensional: 0
           polar: 0
-          width: ''
-          width_units: '%'
-          height: ''
+          width: ""
+          width_units: "%"
+          height: ""
           height_units: px
-          max: '100'
-          min: '0'
-          green_from: '85'
-          green_to: '100'
-          yellow_from: '50'
-          yellow_to: '85'
-          red_from: '0'
-          red_to: '50'
-          xaxis_title: ''
-          xaxis_labels_rotation: '45'
-          yaxis_title: ''
-          yaxis_min: ''
-          yaxis_max: ''
-          yaxis_prefix: ''
-          yaxis_suffix: ''
-          yaxis_decimal_count: ''
-          yaxis_labels_rotation: '45'
+          max: "100"
+          min: "0"
+          green_from: "85"
+          green_to: "100"
+          yellow_from: "50"
+          yellow_to: "85"
+          red_from: "0"
+          red_to: "50"
+          xaxis_title: ""
+          xaxis_labels_rotation: "45"
+          yaxis_title: ""
+          yaxis_min: ""
+          yaxis_max: ""
+          yaxis_prefix: ""
+          yaxis_suffix: ""
+          yaxis_decimal_count: ""
+          yaxis_labels_rotation: "45"
       row:
         type: fields
-        options: {  }
+        options: {}
       fields:
         sessions:
           id: sessions
@@ -600,56 +600,56 @@ display:
           field: sessions
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: ""
           label: Sessions
           exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: ""
             make_link: false
-            path: ''
+            path: ""
             absolute: false
             external: false
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: false
             max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: false
             trim: false
-            preserve_tags: ''
+            preserve_tags: ""
             html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: true
-          empty: '-'
+          empty: "-"
           hide_empty: true
           empty_zero: false
           hide_alter_empty: true
           set_precision: false
           precision: 0
           decimal: .
-          separator: ' '
+          separator: " "
           format_plural: false
           format_plural_string: !!binary MQNAY291bnQ=
-          prefix: ''
-          suffix: ''
+          prefix: ""
+          suffix: ""
           plugin_id: numeric
         pageviews:
           id: pageviews
@@ -657,56 +657,56 @@ display:
           field: pageviews
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: ""
           label: Pageviews
           exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: ""
             make_link: false
-            path: ''
+            path: ""
             absolute: false
             external: false
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: false
             max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: false
             trim: false
-            preserve_tags: ''
+            preserve_tags: ""
             html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: true
-          empty: '-'
+          empty: "-"
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
           set_precision: false
           precision: 0
           decimal: .
-          separator: ' '
+          separator: " "
           format_plural: false
           format_plural_string: !!binary MQNAY291bnQ=
-          prefix: ''
-          suffix: ''
+          prefix: ""
+          suffix: ""
           plugin_id: numeric
         day:
           id: day
@@ -714,45 +714,45 @@ display:
           field: day
           relationship: none
           group_type: group
-          admin_label: ''
-          label: ''
+          admin_label: ""
+          label: ""
           exclude: 0
           alter:
             alter_text: 0
-            text: ''
+            text: ""
             make_link: 0
-            path: ''
+            path: ""
             absolute: 0
             external: 0
             replace_spaces: 0
             path_case: none
             trim_whitespace: 0
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: 0
-            max_length: '0'
+            max_length: "0"
             word_boundary: 1
             ellipsis: 1
             more_link: 0
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: 0
             trim: 0
-            preserve_tags: ''
+            preserve_tags: ""
             html: 0
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: 1
-          empty: ''
+          empty: ""
           hide_empty: 0
           empty_zero: 0
           hide_alter_empty: 1
@@ -763,45 +763,45 @@ display:
           field: month
           relationship: none
           group_type: group
-          admin_label: ''
-          label: ''
+          admin_label: ""
+          label: ""
           exclude: 0
           alter:
             alter_text: 0
-            text: ''
+            text: ""
             make_link: 0
-            path: ''
+            path: ""
             absolute: 0
             external: 0
             replace_spaces: 0
             path_case: none
             trim_whitespace: 0
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: 0
-            max_length: '0'
+            max_length: "0"
             word_boundary: 1
             ellipsis: 1
             more_link: 0
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: 0
             trim: 0
-            preserve_tags: ''
+            preserve_tags: ""
             html: 0
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: 1
-          empty: ''
+          empty: ""
           hide_empty: 0
           empty_zero: 0
           hide_alter_empty: 1
@@ -812,45 +812,45 @@ display:
           field: nothing
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: ""
           label: Date
           exclude: 0
           alter:
             alter_text: true
-            text: '{{ day }}/{{ month }}'
+            text: "{{ day }}/{{ month }}"
             make_link: 0
-            path: ''
+            path: ""
             absolute: 0
             external: 0
             replace_spaces: 0
             path_case: none
             trim_whitespace: 0
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: 0
-            max_length: '0'
+            max_length: "0"
             word_boundary: 1
             ellipsis: 1
             more_link: 0
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: 0
             trim: 0
-            preserve_tags: ''
+            preserve_tags: ""
             html: 0
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: 0
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: 1
-          empty: ''
+          empty: ""
           hide_empty: 0
           empty_zero: 0
           hide_alter_empty: 0
@@ -862,29 +862,29 @@ display:
           field: month
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: ""
           order: ASC
           exposed: false
           expose:
-            label: ''
+            label: ""
           plugin_id: standard
       pager:
         type: none
         options:
-          offset: '0'
+          offset: "0"
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_interface'
+        - "languages:language_interface"
         - user.permissions
-      tags: {  }
+      tags: {}
   top_keywords_block:
     display_plugin: block
     id: top_keywords_block
-    display_title: 'Top Keywords block'
+    display_title: "Top Keywords block"
     position: 6
     display_options:
-      display_extenders: {  }
+      display_extenders: {}
       fields:
         keyword:
           id: keyword
@@ -892,45 +892,45 @@ display:
           field: keyword
           relationship: none
           group_type: group
-          admin_label: ''
-          label: ''
+          admin_label: ""
+          label: ""
           exclude: false
           alter:
             alter_text: true
-            text: '<strong>{{ keyword }}</strong>'
+            text: "<strong>{{ keyword }}</strong>"
             make_link: false
-            path: ''
+            path: ""
             absolute: false
             external: false
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: false
             max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: false
             trim: false
-            preserve_tags: ''
+            preserve_tags: ""
             html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: true
-          empty: ''
+          empty: ""
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
@@ -941,56 +941,56 @@ display:
           field: sessions
           relationship: none
           group_type: group
-          admin_label: ''
-          label: ''
+          admin_label: ""
+          label: ""
           exclude: 0
           alter:
             alter_text: 0
-            text: ''
+            text: ""
             make_link: 0
-            path: ''
+            path: ""
             absolute: 0
             external: 0
             replace_spaces: 0
             path_case: none
             trim_whitespace: 0
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: 0
-            max_length: '0'
+            max_length: "0"
             word_boundary: 1
             ellipsis: 1
             more_link: 0
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: 0
             trim: 0
-            preserve_tags: ''
+            preserve_tags: ""
             html: 0
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: 1
-          empty: ''
+          empty: ""
           hide_empty: 0
           empty_zero: 0
           hide_alter_empty: 1
           set_precision: 0
-          precision: '0'
+          precision: "0"
           decimal: .
-          separator: ','
+          separator: ","
           format_plural: 0
           format_plural_string: !!binary MQNAY291bnQ=
-          prefix: ' - '
-          suffix: ' sessions'
+          prefix: " - "
+          suffix: " sessions"
           plugin_id: numeric
       defaults:
         fields: false
@@ -1001,8 +1001,8 @@ display:
         row: false
         empty: false
         header: false
-      title: 'Top Keywords'
-      css_class: 'google-analytics-reports-summary google-analytics-reports-summary-top-keywords'
+      title: "Top Keywords"
+      css_class: "google-analytics-reports-summary google-analytics-reports-summary-top-keywords"
       sorts:
         sessions:
           id: sessions
@@ -1010,27 +1010,27 @@ display:
           field: sessions
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: ""
           order: DESC
           exposed: false
           expose:
-            label: ''
+            label: ""
           plugin_id: standard
       style:
         type: html_list
         options:
-          grouping: {  }
-          row_class: ''
+          grouping: {}
+          row_class: ""
           default_row_class: true
           type: ol
           wrapper_class: item-list
-          class: ''
+          class: ""
       row:
         type: fields
         options:
           default_field_elements: false
-          inline: {  }
-          separator: ''
+          inline: {}
+          separator: ""
           hide_empty: true
       pager:
         type: some
@@ -1044,28 +1044,28 @@ display:
           field: area_text_custom
           relationship: none
           group_type: group
-          admin_label: 'Pages not found.'
+          admin_label: "Pages not found."
           empty: true
           tokenize: false
-          content: 'Pages not found.'
+          content: "Pages not found."
           plugin_id: text_custom
-      header: {  }
-      display_description: ''
-      block_description: 'Top Keywords'
+      header: {}
+      display_description: ""
+      block_description: "Top Keywords"
       block_category: Dashboard
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_interface'
+        - "languages:language_interface"
         - user.permissions
-      tags: {  }
+      tags: {}
   top_pages_block:
     display_plugin: block
     id: top_pages_block
-    display_title: 'Top pages block'
+    display_title: "Top pages block"
     position: 4
     display_options:
-      display_extenders: {  }
+      display_extenders: {}
       fields:
         pagePath:
           id: pagePath
@@ -1073,45 +1073,45 @@ display:
           field: pagePath
           relationship: none
           group_type: group
-          admin_label: ''
-          label: ''
+          admin_label: ""
+          label: ""
           exclude: true
           alter:
             alter_text: false
-            text: ''
+            text: ""
             make_link: false
-            path: ''
+            path: ""
             absolute: false
             external: false
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: false
             max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: false
             trim: false
-            preserve_tags: ''
+            preserve_tags: ""
             html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: true
-          empty: ''
+          empty: ""
           hide_empty: true
           empty_zero: true
           hide_alter_empty: true
@@ -1122,45 +1122,45 @@ display:
           field: pageTitle
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: ""
           label: Title
           exclude: 0
           alter:
             alter_text: 1
             text: '<a href="{{ pagePath }}">{{ pageTitle }}</a>'
             make_link: 0
-            path: ''
+            path: ""
             absolute: 0
             external: 0
             replace_spaces: 0
             path_case: none
             trim_whitespace: 0
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: 0
-            max_length: '0'
+            max_length: "0"
             word_boundary: 1
             ellipsis: 1
             more_link: 0
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: 0
             trim: 0
-            preserve_tags: ''
+            preserve_tags: ""
             html: 0
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: 0
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: 1
-          empty: ''
+          empty: ""
           hide_empty: 1
           empty_zero: 1
           hide_alter_empty: 1
@@ -1171,56 +1171,56 @@ display:
           field: pageviews
           relationship: none
           group_type: group
-          admin_label: ''
-          label: 'Page views'
+          admin_label: ""
+          label: "Page views"
           exclude: 0
           alter:
             alter_text: 0
-            text: ''
+            text: ""
             make_link: 0
-            path: ''
+            path: ""
             absolute: 0
             external: 0
             replace_spaces: 0
             path_case: none
             trim_whitespace: 0
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: 0
-            max_length: '0'
+            max_length: "0"
             word_boundary: 1
             ellipsis: 1
             more_link: 0
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: 0
             trim: 0
-            preserve_tags: ''
+            preserve_tags: ""
             html: 0
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: 0
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: 1
-          empty: ''
+          empty: ""
           hide_empty: 1
           empty_zero: 1
           hide_alter_empty: 1
           set_precision: 0
-          precision: '0'
+          precision: "0"
           decimal: .
-          separator: ','
+          separator: ","
           format_plural: 0
           format_plural_string: !!binary MQNAY291bnQ=
-          prefix: ''
-          suffix: ' views'
+          prefix: ""
+          suffix: " views"
           plugin_id: numeric
       defaults:
         fields: false
@@ -1231,8 +1231,8 @@ display:
         row: false
         empty: false
         header: false
-      title: 'Top Pages'
-      css_class: 'google-analytics-reports-summary google-analytics-reports-summary-top-pages'
+      title: "Top Pages"
+      css_class: "google-analytics-reports-summary google-analytics-reports-summary-top-pages"
       sorts:
         pageviews:
           id: pageviews
@@ -1240,23 +1240,23 @@ display:
           field: pageviews
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: ""
           order: DESC
           exposed: false
           expose:
-            label: ''
+            label: ""
           plugin_id: standard
       style:
         type: views_bootstrap_table
         options:
-          grouping: {  }
-          row_class: ''
+          grouping: {}
+          row_class: ""
           default_row_class: 1
           override: 1
           sticky: 0
-          caption: ''
-          summary: ''
-          description: ''
+          caption: ""
+          summary: ""
+          description: ""
           columns:
             pagePath: pagePath
             pageTitle: pageTitle
@@ -1265,25 +1265,25 @@ display:
             pagePath:
               sortable: 0
               default_sort_order: asc
-              align: ''
-              separator: ''
+              align: ""
+              separator: ""
               empty_column: 0
-              responsive: ''
+              responsive: ""
             pageTitle:
               sortable: 0
               default_sort_order: asc
-              align: ''
-              separator: ''
+              align: ""
+              separator: ""
               empty_column: 0
-              responsive: ''
+              responsive: ""
             pageviews:
               sortable: 0
               default_sort_order: asc
-              align: ''
-              separator: ''
+              align: ""
+              separator: ""
               empty_column: 0
-              responsive: ''
-          default: '-1'
+              responsive: ""
+          default: "-1"
           empty_table: 0
           responsive: 0
           bootstrap_styles:
@@ -1295,8 +1295,8 @@ display:
         type: fields
         options:
           default_field_elements: false
-          inline: {  }
-          separator: ''
+          inline: {}
+          separator: ""
           hide_empty: true
       pager:
         type: some
@@ -1310,30 +1310,30 @@ display:
           field: area
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: ""
           empty: true
           tokenize: 0
           content:
             value: '<p>Data from Google Analytics cannot be retrieved. You must authenticate your Google Analytics account to see these reports. <a href="/admin/config/services/google-analytics-reports-api">Click here</a> to configure Google Analytics authentication to your site. </p><p><em>You must have administrator permissions on your Google Analytics and your Varbase site to do this. If you don''t have permission, please contact your site administrator.</em></p>'
             format: full_html
           plugin_id: text
-      header: {  }
-      display_description: ''
+      header: {}
+      display_description: ""
       block_category: Dashboard
-      block_description: 'Top Pages'
+      block_description: "Top Pages"
     cache_metadata:
       max-age: 0
       contexts:
-        - 'languages:language_interface'
+        - "languages:language_interface"
         - user.permissions
-      tags: {  }
+      tags: {}
   top_sources_block:
     display_plugin: block
     id: top_sources_block
-    display_title: 'Top  sources block'
+    display_title: "Top  sources block"
     position: 5
     display_options:
-      display_extenders: {  }
+      display_extenders: {}
       fields:
         source:
           id: source
@@ -1341,45 +1341,45 @@ display:
           field: source
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: ""
           label: Source
           exclude: 0
           alter:
             alter_text: 1
-            text: '<strong>{{ source }}</strong>'
+            text: "<strong>{{ source }}</strong>"
             make_link: 0
-            path: ''
+            path: ""
             absolute: 0
             external: 0
             replace_spaces: 0
             path_case: none
             trim_whitespace: 0
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: 0
-            max_length: '0'
+            max_length: "0"
             word_boundary: 1
             ellipsis: 1
             more_link: 0
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: 0
             trim: 0
-            preserve_tags: ''
+            preserve_tags: ""
             html: 0
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: 0
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: 1
-          empty: ''
+          empty: ""
           hide_empty: 0
           empty_zero: 0
           hide_alter_empty: 1
@@ -1390,45 +1390,45 @@ display:
           field: medium
           relationship: none
           group_type: group
-          admin_label: ''
-          label: ''
+          admin_label: ""
+          label: ""
           exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: ""
             make_link: false
-            path: ''
+            path: ""
             absolute: false
             external: false
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: false
             max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: false
             trim: false
-            preserve_tags: ''
+            preserve_tags: ""
             html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: true
-          empty: ''
+          empty: ""
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
@@ -1439,56 +1439,56 @@ display:
           field: sessions
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: ""
           label: Sessions
           exclude: 0
           alter:
             alter_text: 0
-            text: ''
+            text: ""
             make_link: 0
-            path: ''
+            path: ""
             absolute: 0
             external: 0
             replace_spaces: 0
             path_case: none
             trim_whitespace: 0
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: 0
-            max_length: '0'
+            max_length: "0"
             word_boundary: 1
             ellipsis: 1
             more_link: 0
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: 0
             trim: 0
-            preserve_tags: ''
+            preserve_tags: ""
             html: 0
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: 0
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: 1
-          empty: ''
+          empty: ""
           hide_empty: 0
           empty_zero: 0
           hide_alter_empty: 1
           set_precision: 0
-          precision: '0'
+          precision: "0"
           decimal: .
-          separator: ','
+          separator: ","
           format_plural: 0
           format_plural_string: !!binary MQNAY291bnQ=
-          prefix: ''
-          suffix: ' sessions'
+          prefix: ""
+          suffix: " sessions"
           plugin_id: numeric
       defaults:
         fields: false
@@ -1499,8 +1499,8 @@ display:
         row: false
         empty: false
         header: false
-      title: 'Top Sources'
-      css_class: 'google-analytics-reports-summary google-analytics-reports-summary-top-sources'
+      title: "Top Sources"
+      css_class: "google-analytics-reports-summary google-analytics-reports-summary-top-sources"
       sorts:
         sessions:
           id: sessions
@@ -1508,23 +1508,23 @@ display:
           field: sessions
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: ""
           order: DESC
           exposed: false
           expose:
-            label: ''
+            label: ""
           plugin_id: standard
       style:
         type: views_bootstrap_table
         options:
-          grouping: {  }
-          row_class: ''
+          grouping: {}
+          row_class: ""
           default_row_class: 1
           override: 1
           sticky: 0
-          caption: ''
-          summary: ''
-          description: ''
+          caption: ""
+          summary: ""
+          description: ""
           columns:
             source: source
             medium: medium
@@ -1533,25 +1533,25 @@ display:
             source:
               sortable: 0
               default_sort_order: asc
-              align: ''
-              separator: ''
+              align: ""
+              separator: ""
               empty_column: 0
-              responsive: ''
+              responsive: ""
             medium:
               sortable: 0
               default_sort_order: asc
-              align: ''
-              separator: ''
+              align: ""
+              separator: ""
               empty_column: 0
-              responsive: ''
+              responsive: ""
             sessions:
               sortable: 0
               default_sort_order: asc
-              align: ''
-              separator: ''
+              align: ""
+              separator: ""
               empty_column: 0
-              responsive: ''
-          default: '-1'
+              responsive: ""
+          default: "-1"
           empty_table: 0
           responsive: 0
           bootstrap_styles:
@@ -1563,8 +1563,8 @@ display:
         type: fields
         options:
           default_field_elements: false
-          inline: {  }
-          separator: ''
+          inline: {}
+          separator: ""
           hide_empty: true
       pager:
         type: some
@@ -1578,20 +1578,20 @@ display:
           field: area
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: ""
           empty: true
           tokenize: 0
           content:
             value: '<p>Data from Google Analytics cannot be retrieved. You must authenticate your Google Analytics account to see these reports. <a href="/admin/config/services/google-analytics-reports-api">Click here</a> to configure Google Analytics authentication to your site. </p><p><em>You must have administrator permissions on your Google Analytics and your Varbase site to do this. If you don''t have permission, please contact your site administrator.</em></p>'
             format: full_html
           plugin_id: text
-      header: {  }
-      display_description: ''
-      block_description: 'Top Sources'
+      header: {}
+      display_description: ""
+      block_description: "Top Sources"
       block_category: Dashboard
     cache_metadata:
       max-age: 0
       contexts:
-        - 'languages:language_interface'
+        - "languages:language_interface"
         - user.permissions
-      tags: {  }
+      tags: {}
