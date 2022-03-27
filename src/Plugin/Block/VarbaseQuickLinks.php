@@ -9,6 +9,7 @@ use Drupal\Core\Block\BlockPluginInterface;
 use Drupal\Core\Render\RendererInterface;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
+use Drupal\Core\Extension\ModuleHandlerInterface;
 
 /**
  * Provides a 'Varbase Quick Links'.
@@ -29,6 +30,13 @@ class VarbaseQuickLinks extends BlockBase implements BlockPluginInterface, Conta
   protected $renderer;
 
   /**
+   * The module manager service.
+   *
+   * @var \Drupal\Core\Extension\ModuleHandlerInterface
+   */
+  protected $moduleHandler;
+
+  /**
    * Creates a VarbaseQuickLinks block instance.
    *
    * @param array $configuration
@@ -39,10 +47,13 @@ class VarbaseQuickLinks extends BlockBase implements BlockPluginInterface, Conta
    *   The plugin implementation definition.
    * @param \Drupal\Core\Render\RendererInterface $renderer
    *   The renderer service.
+   * @param \Drupal\Core\Extension\ModuleHandlerInterface $module_handler
+   *   The module manager service.
    */
-  public function __construct(array $configuration, $plugin_id, $plugin_definition, RendererInterface $renderer) {
+  public function __construct(array $configuration, $plugin_id, $plugin_definition, RendererInterface $renderer, ModuleHandlerInterface $module_handler) {
     parent::__construct($configuration, $plugin_id, $plugin_definition);
     $this->renderer = $renderer;
+    $this->moduleHandler = $module_handler;
   }
 
   /**
@@ -53,7 +64,8 @@ class VarbaseQuickLinks extends BlockBase implements BlockPluginInterface, Conta
       $configuration,
       $plugin_id,
       $plugin_definition,
-      $container->get('renderer')
+      $container->get('renderer'),
+      $container->get('module_handler')
     );
   }
 
@@ -61,11 +73,14 @@ class VarbaseQuickLinks extends BlockBase implements BlockPluginInterface, Conta
    * {@inheritdoc}
    */
   public function build() {
-    $links = [];
+    if ($this->moduleHandler->moduleExists('menu_ui')) {
+      $links[] = Link::fromTextAndUrl($this->t('Manage menus'), Url::fromRoute('entity.menu.collection'));
+    }
+    if ($this->moduleHandler->moduleExists('taxonomy')) {
+      $links[] = Link::fromTextAndUrl($this->t('Manage taxonomy'), Url::fromRoute('entity.taxonomy_vocabulary.collection'));
+    }
 
-    $links[] = Link::fromTextAndUrl($this->t('Manage menus'), new Url('entity.menu.collection'));
-    $links[] = Link::fromTextAndUrl($this->t('Manage taxonomy'), new Url('entity.taxonomy_vocabulary.collection'));
-    $links[] = Link::fromTextAndUrl($this->t('Manage users'), new Url('entity.user.collection'));
+    $links[] = Link::fromTextAndUrl($this->t('Manage users'), Url::fromRoute('entity.user.collection'));
 
     $body_data = [
       '#theme' => 'item_list',
