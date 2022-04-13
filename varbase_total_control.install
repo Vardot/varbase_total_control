@@ -25,6 +25,11 @@ function varbase_total_control_install() {
 
 }
 
+/**
+ * Issue #3272301: Switch to use the Module Installer Factory.
+ *
+ * In the Varbase Total Control Dashboard module.
+ */
 function varbase_total_control_update_90001() {
   // Set the weight of the module after installation of list of modules.
   // To make sure that any hook or event subscriber workes after all used modules.
