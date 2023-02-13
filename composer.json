@@ -33,7 +33,7 @@
     "drupal/core": "~9.0 || ~10.0",
     "vardot/module-installer-factory": "~1.0",
     "drupal/charts": "~5.0",
-    "drupal/google_analytics_reports": "~4.0",
+    "drupal/google_analytics_reports": "4.0.x-dev",
     "drupal/total_control": "~3.0"
   },
   "suggest": {
