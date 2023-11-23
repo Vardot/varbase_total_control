@@ -1,5 +1,3 @@
-# Schema for the configuration files of the google_analytics_reports module.
-
 varbase_google_analytics_reports.settings:
   type: config_object
   label: "Google Analytics Reports settings"
