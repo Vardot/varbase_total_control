@@ -19,7 +19,7 @@ function varbase_total_control_install() {
   ModuleInstallerFactory::importConfigsFromScanedDirectory('varbase_total_control', '/^.*(settings.yml)$/i');
 
   // Add permissions.
-  ModuleInstallerFactory::addPermissions('varbase_core');
+  ModuleInstallerFactory::addPermissions('varbase_total_control');
 
 }
 
