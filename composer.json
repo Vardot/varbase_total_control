@@ -23,12 +23,12 @@
     }
   },
   "require": {
-    "drupal/core": "~10.3.0 || ~11.0.0",
-    "vardot/varbase-patches": "~9 || ~11",
+    "drupal/core": "~10.4.0 || ~11.1.0",
+    "vardot/varbase-patches": "~9",
     "vardot/entity-definition-update-manager": "~1",
     "vardot/module-installer-factory": "~1",
     "drupal/charts": "~5.0",
-    "drupal/google_analytics_reports": "~3.0",
-    "drupal/total_control": "~3.0"
+    "drupal/google_analytics_reports": "~3",
+    "drupal/total_control": "~3"
   }
 }
