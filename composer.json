@@ -23,11 +23,9 @@
     }
   },
   "require": {
-    "drupal/core": "~10.4.0 || ~11.1.0",
+    "drupal/core": "~10.5.0 || ~11.2.0",
     "vardot/varbase-patches": "~9 || ~10",
-    "vardot/entity-definition-update-manager": "~1",
-    "vardot/module-installer-factory": "~1",
-    "drupal/charts": "~5.0",
+    "drupal/charts": "~5",
     "drupal/google_analytics_reports": "~3",
     "drupal/total_control": "~3"
   }
