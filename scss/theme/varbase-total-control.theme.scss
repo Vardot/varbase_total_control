@@ -1,4 +1,4 @@
-@import "node_modules/rfs/scss";
+@use "node_modules/rfs/scss" as *;
 
 .block-varbase-create-content {
   .item-list {
