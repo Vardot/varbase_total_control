@@ -3,7 +3,10 @@
 namespace Drupal\varbase_total_control\Plugin\Condition;
 
 use Drupal\Core\Condition\ConditionPluginBase;
+use Drupal\Core\Extension\ModuleHandlerInterface;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
  * Provides a 'Module' condition.
@@ -13,7 +16,21 @@ use Drupal\Core\Form\FormStateInterface;
  *   label = @Translation("Module enabled"),
  * )
  */
-class ModuleEnabled extends ConditionPluginBase {
+class ModuleEnabled extends ConditionPluginBase implements ContainerFactoryPluginInterface {
+
+  /**
+   * Constructs a ModuleEnabled condition plugin.
+   */
+  public function __construct(array $configuration, $plugin_id, $plugin_definition, protected ModuleHandlerInterface $moduleHandler) {
+    parent::__construct($configuration, $plugin_id, $plugin_definition);
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition) {
+    return new static($configuration, $plugin_id, $plugin_definition, $container->get('module_handler'));
+  }
 
   /**
    * {@inheritdoc}
@@ -68,8 +85,7 @@ class ModuleEnabled extends ConditionPluginBase {
       return TRUE;
     }
 
-    $moduleHandler = \Drupal::service('module_handler');
-    return (bool) $moduleHandler->moduleExists($this->configuration['module']);
+    return (bool) $this->moduleHandler->moduleExists($this->configuration['module']);
   }
 
 }

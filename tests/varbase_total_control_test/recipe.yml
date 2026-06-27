@@ -1,0 +1,5 @@
+name: 'Varbase Total Control Test'
+description: 'Provisions a Standard site with the Varbase Total Control Dashboard for the automated tests.'
+type: 'Testing'
+install:
+  - varbase_total_control
