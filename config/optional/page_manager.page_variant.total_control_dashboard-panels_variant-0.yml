@@ -4,7 +4,6 @@ dependencies:
   config:
     - page_manager.page.total_control_dashboard
     - views.view.control_content_panes
-    - views.view.varbase_google_analytics_summary
   module:
     - panels
     - varbase_total_control
@@ -45,39 +44,6 @@ variant_settings:
       region: first
       weight: 0
       uuid: a145445d-bf17-4de3-beb2-828007ac3d54
-      context_mapping: {}
-    4cabdfda-ff0c-4f33-b2ad-d0556d5d2f97:
-      id: "views_block:varbase_google_analytics_summary-top_pages_block"
-      label: ""
-      provider: views
-      label_display: visible
-      views_label: ""
-      items_per_page: none
-      region: second
-      weight: -2
-      uuid: 4cabdfda-ff0c-4f33-b2ad-d0556d5d2f97
-      context_mapping: {}
-    32886dcf-fa13-4674-9435-06c14cb42f25:
-      id: "views_block:varbase_google_analytics_summary-top_sources_block"
-      label: ""
-      provider: views
-      label_display: visible
-      views_label: ""
-      items_per_page: none
-      region: second
-      weight: -1
-      uuid: 32886dcf-fa13-4674-9435-06c14cb42f25
-      context_mapping: {}
-    47341d50-9e62-45f6-9bd6-4ac02171043c:
-      id: "views_block:varbase_google_analytics_summary-sessions_and_pageviews"
-      label: ""
-      provider: views
-      label_display: visible
-      views_label: ""
-      items_per_page: none
-      region: second
-      weight: -3
-      uuid: 47341d50-9e62-45f6-9bd6-4ac02171043c
       context_mapping: {}
     01630e32-baf4-4e6d-8b93-926ec5eef7ad:
       id: varbase_quick_links

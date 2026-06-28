@@ -44,12 +44,6 @@ class VarbaseTotalControlHooks {
   #[Hook('theme')]
   public function theme($existing, $type, $theme, $path): array {
     return [
-      'block__views_block__varbase_google_analytics_summary_top_pages_block' => [
-        'base hook' => 'block',
-      ],
-      'block__views_block__varbase_google_analytics_summary_top_sources_block' => [
-        'base hook' => 'block',
-      ],
       'block__varbase_total_control' => [
         'base hook' => 'block',
       ],
@@ -57,9 +51,6 @@ class VarbaseTotalControlHooks {
         'base hook' => 'block',
       ],
       'block__views_block__control_content_panes_pane_tc_new' => [
-        'base hook' => 'block',
-      ],
-      'block__views_block__varbase_google_analytics_summary_sessions_and_pageviews' => [
         'base hook' => 'block',
       ],
       'block__varbase_dashboard_user' => [

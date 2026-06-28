@@ -3,7 +3,7 @@
 A dashboard is what is missing for better Drupal administration experience.
 
 This dashboard is built on top of Total Control Admin Dashboard module,
- utilizing Panels, Google Analytics Reports, and several enhanced blocks
+ utilizing Panels and several enhanced blocks
  and widgets for an intuitive and flexible administration experience.
 
 The idea is made to provide the site admins with appealing and concise
@@ -12,7 +12,6 @@ The idea is made to provide the site admins with appealing and concise
 
 ### Dependencies:
 * [Total Control Admin Dashboard](https://www.drupal.org/project/total_control)
-* [Google Analytics Reports](https://www.drupal.org/project/google_analytics_reports)
 * [Charts](https://www.drupal.org/project/charts)
 
 

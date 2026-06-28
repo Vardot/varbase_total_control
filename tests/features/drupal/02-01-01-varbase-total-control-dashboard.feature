@@ -10,8 +10,8 @@ Feature: Varbase Total Control - administration dashboard
   Scenario: The dashboard shows the Varbase Total Control widgets
     When I go to "/admin/dashboard"
     Then I should see "Dashboard"
-    And I should see "Create Content"
-    And I should see "Content Overview"
-    And I should see "Administer Menus"
+    And I should see "Create New Content"
+    And I should see "My Site Overview"
+    And I should see "Quick Links"
     And I should not see "Access denied"
     And I should not see "The website encountered an unexpected error"
