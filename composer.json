@@ -19,7 +19,6 @@
         "drupal/core": "~11.3.0",
         "vardot/module-installer-factory": "~1",
         "drupal/charts": "~5",
-        "drupal/google_analytics_reports": "~4",
         "drupal/total_control": "~3"
     }
 }

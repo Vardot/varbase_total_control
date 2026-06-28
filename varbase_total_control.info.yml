@@ -6,7 +6,5 @@ core_version_requirement: ~11.3.0
 dependencies:
   - total_control:total_control
 install:
-  - google_analytics_reports_api
-  - google_analytics_reports
   - charts
   - charts_c3
