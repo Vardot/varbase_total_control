@@ -16,7 +16,7 @@
         "source": "http://cgit.drupalcode.org/varbase_total_control"
     },
     "require": {
-        "drupal/core": "~11.3.0",
+        "drupal/core": "~11.4.0",
         "vardot/module-installer-factory": "~1",
         "drupal/charts": "~5",
         "drupal/total_control": "~3"
