@@ -1,0 +1,17 @@
+name: Varbase Total Control Dashboard - Default
+description: A recipe to manage default installed modules, configs and permissions.
+type: install
+config:
+  actions:
+    user.role.editor:
+      grantPermissions:
+        - 'have total control'
+    user.role.content_admin:
+      grantPermissions:
+        - 'have total control'
+    user.role.seo_admin:
+      grantPermissions:
+        - 'have total control'
+    user.role.site_admin:
+      grantPermissions:
+        - 'have total control'

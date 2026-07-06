@@ -92,6 +92,10 @@ webship-js-test:
     # hook_requirements prompts and leniently skips optional configs that
     # Provision Varbase Total Control + Search API, the content index, the search results
     # Install via the module installer (the dashboard page from total_control config/install + the Varbase panels variant are created on install; the strict recipe config-import does not create the page_manager page).
+    - $CI_PROJECT_DIR/vendor/bin/drush --root=$CI_PROJECT_DIR/$_WEB_ROOT role:create editor 'Editor' || true
+    - $CI_PROJECT_DIR/vendor/bin/drush --root=$CI_PROJECT_DIR/$_WEB_ROOT role:create content_admin 'Content admin' || true
+    - $CI_PROJECT_DIR/vendor/bin/drush --root=$CI_PROJECT_DIR/$_WEB_ROOT role:create site_admin 'Site admin' || true
+    - $CI_PROJECT_DIR/vendor/bin/drush --root=$CI_PROJECT_DIR/$_WEB_ROOT role:create seo_admin 'SEO admin' || true
     - $CI_PROJECT_DIR/vendor/bin/drush --root=$CI_PROJECT_DIR/$_WEB_ROOT php:eval '\Drupal::service("module_installer")->install(["varbase_total_control"]);' || true
     # Create the dashboard permission role and the test users for the access matrix.
     - $CI_PROJECT_DIR/vendor/bin/drush --root=$CI_PROJECT_DIR/$_WEB_ROOT php:eval '\Drupal\user\Entity\Role::create(["id" => "dashboard_user", "label" => "Dashboard user"])->save();' || true

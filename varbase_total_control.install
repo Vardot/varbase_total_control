@@ -5,6 +5,8 @@
  * Install, update and uninstall functions for the Varbase Total Control Dashboard module.
  */
 
+use Drupal\Core\Recipe\Recipe;
+use Drupal\Core\Recipe\RecipeRunner;
 use Vardot\Installer\ModuleInstallerFactory;
 
 /**
@@ -18,8 +20,9 @@ function varbase_total_control_install() {
   // Install optional configs.
   ModuleInstallerFactory::importConfigsFromScanedDirectory('varbase_total_control', '/^.*(settings.yml)$/i');
 
-  // Add permissions.
-  ModuleInstallerFactory::addPermissions('varbase_total_control');
+  // Grant role permissions via the default recipe.
+  $default_recipe = Recipe::createFromDirectory(__DIR__ . '/recipes/default');
+  RecipeRunner::processRecipe($default_recipe);
 
 }
 
