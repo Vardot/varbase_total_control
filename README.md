@@ -1,3 +1,7 @@
+[![pipeline status](https://git.drupalcode.org/project/varbase_total_control/badges/9.2.x/pipeline.svg)](https://git.drupalcode.org/project/varbase_total_control/-/pipelines)
+[![Varbase Total Control Dashboard](https://img.shields.io/badge/Varbase%20Total%20Control%20Dashboard-9.2.0-0d6efc?labelColor=001d38&style=flat-square)](https://git.drupalcode.org/project/varbase_total_control/-/pipelines?ref=9.2.0)
+[![Automated Functional Testing](https://git.drupalcode.org/project/varbase_total_control/badges/9.2.x/pipeline.svg)](https://git.drupalcode.org/project/varbase_total_control/-/pipelines)
+
 # Varbase Total Control Dashboard
 
 A dashboard is what is missing for better Drupal administration experience.
