@@ -72,7 +72,7 @@
   "minimatch": "~5",
   "minimist": "~1",
   "mkdirp": "~1",
-  "postcss": "^7.0.18",
+  "postcss": "^8.5.23",
   "postcss-calc": "^7.0.1",
   "postcss-header": "^2.0.0",
   "postcss-import": "^12.0.1",
